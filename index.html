@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fromulario </title>
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
-<link rel="stylesheet" href="estilos.css">
 <body>
-    <div>
-        jsndasbndbbaf
-        asds
-        <address>
-            <samp><data value="
-                samp
-                datasa
-                data
-                sampa
-                datasa
-                datasa
-                data
-                data
-                for (const g
-                f
-                
-                hhf
-                headfg object) {
-                    
-                }"></data></samp>
-        </address>
+    <div class="bc">
+        <div class="cajita">
+            <div id="nombreUsuarioDisplay"></div>
+        </div>
     </div>
+
+    <!-- Menú emergente de inicio de sesión -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Inicio de Sesión</h2>
+            <form id="loginForm">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
